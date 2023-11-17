@@ -36,6 +36,7 @@ position: sticky;
     align-items: center;
     justify-content: space-around;
     border: 1px solid beige;
+    z-index: 999;
    
 }
 
@@ -164,7 +165,19 @@ margin-top: 40px;
     font-size: 2rem;
     color: #1a2024;
     margin-left: 35px;
+    position: relative;
 
+}
+.ui-top::after{
+   
+    content: '';
+    width: 14%;
+    height: 2px;
+    left: 0;
+    bottom: 1px;
+    background: rgb(204, 20, 20);
+    position: absolute;
+    margin: 0px 149px;
 }
 .ui-top strong{
     font-weight: 700;
@@ -179,14 +192,14 @@ cursor: pointer;
 .feature{
 display: flex;
 justify-content: space-evenly;
-margin-top: 10px;
+margin-top: 12px;
 width: 100%;
 
 }
 .earbuds{
 border: 1px solid rgb(236, 234, 234);
 border-radius: 15px;
-height: 450px;
+height: 460px;
 overflow: hidden;
 cursor: pointer;
 }
@@ -274,6 +287,68 @@ margin:0px 15px;
     cursor: pointer;
     
 }
-nav{
+.boat-watches{
     background-image: linear-gradient(#fffefd, #fff2da);
+}
+
+.watch-banner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.watch-img{
+    width: 45%;
+}
+
+.watch-image{
+    height: 310px;
+    width: 300px;
+}
+.watch{
+    border: 1px solid rgb(236, 234, 234);
+border-radius: 15px;
+height: 460px;
+overflow: hidden;
+cursor: pointer;
+}
+
+.wtch-txt{
+font-size: 84px;
+line-height: 95px;
+color: #1a2024;
+}
+.wtch-prc{
+    font-size: 30px;
+    line-height: 40px;
+
+}
+.watch-capacity span{
+    padding: 5px 71px;
+}
+.wtch-mv{
+    margin-left: 305px;
+}
+.wtch-btn{
+    margin: 15px 107px;
+
+}
+.boat-neckband{
+    background-image: linear-gradient(#ffffff, #f2edff);
+}
+.feature-shopping-2{
+   
+    background-image: linear-gradient(#fff2da,#fffefd);
+}
+
+.band-btn{
+    margin-top: 15px;
+
+}
+.band-img-text{
+width: 50%;
+margin-left: 75px;
+}
+.feature-shopping-3{
+    background-image: linear-gradient(#f2edff,#ffffff);
 }
