@@ -49,7 +49,7 @@ position: sticky;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border: 1px solid beige;
+    border-bottom: 1px solid #ede8e8;
     
    
 }
@@ -118,12 +118,13 @@ height: 40px;
 }
 .main-input{
     width: 100%;
-    background: #eee;
+    background:#f4f5f7;
     display: flex;
     border-radius: 20px;
   
     
 }
+
 #input-inner{
     border: none;
   
@@ -198,7 +199,7 @@ margin-left: -61px;
    flex-wrap: wrap;
 }
 .image{
-    margin-top: -80px;
+    margin-top: -40px;
 }
 .image img{
     width: 375px;
@@ -206,13 +207,14 @@ margin-left: -61px;
 }
 .hero-text{
     text-align: center;
-    letter-spacing: 0px !important;
+    letter-spacing: 1px !important;
    
     margin: 50px auto !important;
 }
 
 #hero-text-1 {
 font-size:2.2rem !important;
+font-weight: 500 !important;
 }
 .hero-text-1 {
     letter-spacing: 2px !important;
@@ -221,13 +223,13 @@ font-size:2.2rem !important;
     font-size:2rem !important;
 }
 .hero-text-3{
-font-size: 13px !important;
+font-size: 11px !important;
 }
 .hero-button{
     margin-top: 15px !important;
 }
 .shop-product-btn{
-    padding: 10px 12px !important;
+    padding: 8px 18px !important;
     font-size: 10px !important;
 
 
