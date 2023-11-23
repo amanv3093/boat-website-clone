@@ -13,6 +13,7 @@
     
     
 }
+
 .loading-bar-text{
     display: flex;
     justify-content: center;
@@ -22,11 +23,24 @@
     font-weight: 500;
 
 }
+.menu-bar{
+    display: none;
+}
+.search-in-mobile{
+    display: none;
+}
+
+   
+
+    
+
+    /* media query */
+
 header{
 position: sticky;
   top: 0;
-  background-color:  rgb(255, 245, 245);
-  z-index: 2px;
+  background-color:  white;
+ z-index: 999;
 }
 .navbar{
    width: 100%;
@@ -36,13 +50,33 @@ position: sticky;
     align-items: center;
     justify-content: space-around;
     border: 1px solid beige;
-    z-index: 999;
+    
    
+}
+#nav-list-select{
+    border: none;
+    background: white;
+    font-size: 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+#nav-list-select option{
+   width: 200px ;
+   height: 200px;
+   background: pink;
+   position: relative;
+}
+#nav-list-select option::after{
+    position: absolute;
+    height: 200px;
+    background: pink;
+    width: 100px ;
 }
 
 .logo-img{
-background:url(1200px-Boat_Logo.webp-removebg.png) ;
-height:40px;
+background:url('https://www.boat-lifestyle.com/cdn/shop/files/boAt_logo_small_3067da8c-a83b-46dd-b28b-6ef1e16ccd17_small.svg?v=1693549434') ;
+height:33px;
 width: 80px;
 background-position: center;
 background-size: cover;
@@ -58,11 +92,15 @@ color: black;
 .navbar-list ul{
     display: flex;
     font-size: 1rem;
+  
 }
 .navbar-list ul li{
     list-style: none;
     margin: 0px 22px;
+   
 }
+
+
 
 .navbar-list ul li a{
     text-decoration: none;
@@ -71,16 +109,18 @@ color: black;
     letter-spacing: 0.85px
 }
 .navbar-search{
-   background-color: rgba(184, 180, 180, 0.795);
+   
    margin-right: -5px;
     width: 315px;
 height: 40px;
-border-radius: 21px;
+
     
 }
 .main-input{
-  
+    width: 100%;
+    background: #eee;
     display: flex;
+    border-radius: 20px;
   
     
 }
@@ -107,18 +147,136 @@ margin-left: -61px;
     margin-left: -45px;
     
 }
-.hero-session{
-    background-image: linear-gradient(#edfefe, #eeffff);
-    z-index: -1;
-    display: flex;
+
+@media screen and (min-width:375px) and (max-width:480px) {
+    .loading-bar{
+        font-size: 0.70rem;
+      
+
+    }
+    .loading-bar-text{
+        text-align: center;
+    }
+    .loading-bar-text p{
+        margin-left: 5px;
+    margin-right: 5px;
+    }
    
-    justify-content: space-between;
+    .navbar-list,.navbar-search{
+        display: none;
+    }
+    .logo{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -32px;
+    }
+    .menu-bar{
+        margin: 0px 19px;
+    font-size: 1.55rem;
+    padding: 0px -12px;
+    /* padding: 16px 1px; */
+    margin-top: 10px;
+    display: block;
+    }
+    .search-in-mobile{
+        display: inline;
+    margin-left: 40px;
+    font-size: 18px;
+
+}
+.user{
+    margin-right: 27px;
+}
+.hero-session{
+   
+   flex-wrap: wrap;
 }
 .image{
-width: 50%;
+    margin-top: -80px;
+}
+.image img{
+    width: 375px;
+    height: 270px;
 }
 .hero-text{
-    width: 50%;
+    text-align: center;
+    
+    margin-top: 65px !important;
+}
+
+#hero-text-1 {
+font-size:2.2rem !important;
+}
+.hero-text-1 {
+    
+}
+.hero-text-2 strong{
+    font-size:2rem !important;
+}
+.hero-text-3{
+font-size: 13px !important;
+}
+.hero-button{
+    margin-top: 15px !important;
+}
+.shop-product-btn{
+    padding: 10px 13px !important;
+    font-size: 14px !important;
+
+
+}
+.feature-shopping-1{
+background-image: linear-gradient(#edfefe, white);
+}
+.ui-heading{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.ui-top{
+font-size: 2rem;
+color: #1a2024;
+margin-left: 35px;
+position: relative;
+
+}
+.ui-top::after{
+
+content: '';
+width: 14%;
+height: 2px;
+left: 0;
+bottom: 1px;
+background: rgb(204, 20, 20);
+position: absolute;
+margin: 0px 149px;
+}
+.ui-top strong{
+font-weight: 700;
+}
+.view{
+font-size: 15px;
+font-size: 12px;
+color: #262642;
+margin-right: 35px;
+cursor: pointer;
+}
+
+    }
+    .hero-session{
+        background-image: linear-gradient(#edfefe, #eeffff);
+        z-index: -1;
+        display: flex;
+       
+        justify-content: space-between;
+        flex-direction: wrap;
+    }
+.image{
+
+}
+.hero-text{
+    
     margin: 107px 50px;
     letter-spacing: 1px;
     color: #1a2024;
